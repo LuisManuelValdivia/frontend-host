@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+/* Estilos generales del contenedor .breadcrumb */
+.custom-breadcrumb {
+  background-color: #f5f5f5; /* Fondo claro */
+  border-radius: 0.5rem;     /* Borde redondeado */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Cambiamos el separador por ">" en lugar de "/" */
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #6c757d; /* gris medio */
+  padding: 0 0.5rem;
+}
+
+/* Enlaces de cada item */
+.custom-breadcrumb .breadcrumb-item a {
+  color: #7E76F4;       /* Color morado para el link */
+  text-decoration: none; 
+}
+
+/* Hover en los enlaces */
+.custom-breadcrumb .breadcrumb-item a:hover {
+  text-decoration: underline; 
+}
+
+/* Estilo para el item activo (la página actual) */
+.custom-breadcrumb .breadcrumb-item.active {
+  color: #333;
+  font-weight: 600;
+}
+
