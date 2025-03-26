@@ -44,7 +44,7 @@ import PoliticasPrivacidad from './pages/PoliticasPrivacidad';
 
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:4000';  // URL de tu backend
+axios.defaults.baseURL = 'https://backend-usp8.onrender.com/';  // URL de tu backend
 axios.defaults.withCredentials = true;            // Enviar/recibir cookies
 
 function App() {
